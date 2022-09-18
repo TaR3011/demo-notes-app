@@ -1,4 +1,7 @@
 const config = {
+  MAX_ATTACHMENT_SIZE: 5000000,
+  STRIPE_KEY:
+    "pk_test_51Lih43Ci04YvMwz3scOjpooHRbMz3n3LzfKLGrfXcbglC2TC65yH1QQn1ltEoqQcGyBeCFDApQ3eWIbGZtSEYKwQ00So33alPx",
   // Backend config
   s3: {
     REGION: process.env.REACT_APP_REGION,
@@ -9,6 +12,9 @@ const config = {
     URL: process.env.REACT_APP_API_URL,
   },
   cognito: {
+    MAX_ATTACHMENT_SIZE: 5000000,
+    STRIPE_KEY:
+      "pk_test_51Lih43Ci04YvMwz3scOjpooHRbMz3n3LzfKLGrfXcbglC2TC65yH1QQn1ltEoqQcGyBeCFDApQ3eWIbGZtSEYKwQ00So33alPx",
     REGION: process.env.REACT_APP_REGION,
     USER_POOL_ID: process.env.REACT_APP_USER_POOL_ID,
     APP_CLIENT_ID: process.env.REACT_APP_USER_POOL_CLIENT_ID,
